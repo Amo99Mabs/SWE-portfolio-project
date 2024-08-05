@@ -44,3 +44,46 @@ line-height: 84.38px;
     width: 200px;
     height: 53px;
 }
+/*work section*/
+h2{ 
+    font-size: 64px;
+    line-height: 1.5;
+}
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn-outline{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    border-radius: 50px;
+    padding: 18px 30px 18px 30px;
+    width: 200px;
+    height: 53px;
+    border: 1px solid var(--secondary-color);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+.project-description{
+    padding: 120px 60px ;
+}
+@media(max-width: 960px){
+    .hero{
+    
+    padding: 80px 20px;
+}
+    h1{
+        font-size: 44px;
+        line-height: 2;
+    }
+    h2{
+        font-size: 44px;
+    }
+
+    .project-description{
+        padding: 0;
+        text-align: center;
+    }
+}
