@@ -10,6 +10,36 @@ body{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+/*nav*/
+.logo{
+    max-height: 40px;
+}
+nav {
+    padding: 20px 0;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    display: inline;
+    list-style: none;
+    line-height: 44px;
+    margin-left: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+nav a:hover{
+    color: violet;
+}
+nav li.active a {
+color: grey;
+}
+
+/*hero*/
 
 .hero{
     background-color:var(--primary-color);
@@ -44,6 +74,44 @@ line-height: 84.38px;
     width: 200px;
     height: 53px;
 }
+/*footer*/
+footer{
+    margin: 60px 0;
+}
+footer.contact-box{
+    background: violet;
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+footer .email-link{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 24px;
+
+}
+footer .email-link:hover{
+    color: var(--secondary-color);
+}
+footer.social-links a{
+    margin: 0 20px;
+    color: var(--secondary-color);
+    background: violet;
+    padding:10px 14px;
+    font-size:18px;
+border-radius: 50%;
+transition: all 100ms ease-in-out;
+
+}
+footer.social-links a:hover{
+    color: violet;
+    background: var(--secondary-color);
+}
+footer .contact-box p{
+    margin: 0;
+}
+h4{
+    font-size: 48px;
+}
 /*work section*/
 h2{ 
     font-size: 64px;
@@ -69,7 +137,8 @@ p{
 .project-description{
     padding: 120px 60px ;
 }
-@media(max-width: 960px){
+/*media query*/
+@media(max-width: 900px){
     .hero{
     
     padding: 80px 20px;
@@ -81,7 +150,10 @@ p{
     h2{
         font-size: 44px;
     }
-.about-section{
+    h4{
+        font-size: 26px;
+    }
+.content{
     text-align: center;
     padding: 0;
 }
@@ -89,6 +161,10 @@ p{
         padding: 0;
         text-align: center;
     }
+    
+.btn{
+    font-size: 18px;
+}
 }
 /*About/content */
 .content-container{
@@ -109,6 +185,7 @@ p{
     font-size: 24px;
     line-height: 1.5;
     margin-top: 20px 0 0;
+    font-family: var(--heading-font-family);
 }
 .content p {
     font-size: 14px;
